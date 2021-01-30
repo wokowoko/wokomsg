@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Quicksand:wght@300;392&display=swap');
+
+body{
+    margin:0;
+    padding: -5px;
+    background-color:  #f7f7f7;
+    font-family: "Quicksand";
+    overflow-y: scroll;
+}
+
+nav{
+    background-color:#003049;
+    margin: 0px;
+    padding: 1px;
+
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    height: 100%;
+    display: inline;
+    padding: 25px;
+    transition: 0.4s;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    display:block;
+    
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.Post{
+    background-color: white;
+    border: #afbecc solid 1px;
+    border-radius: 15px;
+    margin: 2rem;
+    width: 40rem;
+    padding: 20px;
+}
+
+.Post-pro{
+    background-color: white;
+    border: #f4ff55 solid 1px;
+    border-radius: 15px;
+    margin: 2rem;
+    width: 40rem;
+    padding: 20px;
+}
+
+.Post article p{
+    font-size: 15px;
+    width: 500px;
+    font-weight: lighter;
+    text-align: left;
+    
+   
+}
+.input-post, .textarea-post{
+    width: 50rem;
+    height: 2rem;
+    outline: none;
+    margin: 4px;
+    border: #1e9df1 solid 2px;
+    border-radius: 5px;
+}
+
+.textarea-post{
+    height: 20rem;
+    resize: vertical;
+}
+section{
+display: flex;
+margin: 20px;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+button{
+    max-height: 50px;
+    position: relative;
+    right: auto;
+    outline: none;
+    border:none;
+}
+
+svg{
+    fill: #00b4d8;
+    stroke-width: 20px;
+    width: 50px;
+}
+
+body::-webkit-scrollbar{
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to bottom, #00b4d8, #caf0f8);
+}
+
+body::-webkit-scrollbar-track{
+   
+    background:  #003049;
+}
+
+button:hover .emoji-input{
+    display: block;
+}
+
+
+nav ul li:hover{
+    background-color: #6c757d;
+}
+
+
+.shadow, .shadow-2, .shadow-3{
+    
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display:none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.post{
+    outline: none;
+    border: none;
+    background: #1e9df1;
+    color: white;
+    width: 5rem;
+    padding: 8px;
+    border-radius: 25px;
+    margin-left: 40%;
+    transition: 0.5s;
+    float: right;
+}
+
+.btn-del{
+    outline: none;
+    border: none;
+    background: #f52929;
+    color: white;
+    width: 5rem;
+    padding: 8px;
+    border-radius: 25px;
+    margin: 2rem;
+    transition: 0.5s;
+    
+    
+}
+
+.btn-del-pro{
+    outline: none;
+    border: none;
+    background: #dba800;
+    color: white;
+    width: 5rem;
+    padding: 8px;
+    border-radius: 25px;
+    margin-left: 80%;
+    transition: 0.5s;
+}
+.sign-up-modal, .sign-in-modal{
+    position: relative;
+    background: white;
+    width: 400px;
+    height: 200px;
+   
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-modal, .textarea-modal{
+    width: 90%;
+    height: 2rem;
+    outline: none;
+    margin: 5px;
+    border: #00b4d8 solid 2px;
+    border-radius: 5px;
+   
+}
+
+.emoji-input, .input-textarea{
+    display:block;
+}
+
+
+.btn-sign-up, .btn-sign-in{
+    background-color:#1e9df1;
+    width: 80%;
+    color:white;
+    padding:15px;
+    border-radius: 5px;
+    margin: 10px 5px 10px 30px;
+    transition: 0.4s;
+}
+
+.btn-sign-up:hover, .btn-sign-in:hover{
+    background-color: #7bc2eb;
+}
+
+button, a, .emoji-input, .emoji-textarea{
+    cursor:pointer;
+}
+
+
+.modal-error{
+    position: fixed;
+    z-index: 1;
+    padding: 0%;
+    margin: 0%;
+    width: 20rem;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    display:none;
+}
+
+.modal-error a{
+    position: relative;
+    display: block;
+    float: right;
+    left: 20px;
+    bottom: 20px;
+    
+}
+
+.modal-error a img{
+    width: 40px;
+}
+
+.modal-name{
+    border-radius: 20px;
+    position:fixed;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-name .input-modal{
+    width:100%;
+}
+
+.post:hover{
+    transform: scale(1.1, 1.1);
+    background-color: #8edae9;
+}
+
+.post:hover .emoji-input{
+    display:block;
+}
+
+.btn-del:hover{
+    transform: scale(1.1, 1.1);
+    background-color: #ec9494;
+}
+
