@@ -9,6 +9,7 @@ body{
 }
 
 nav{
+    position:fixed;
     background-color:#003049;
     margin: 0px;
     padding: 1px;
